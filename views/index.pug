@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  div(id="prueba")
+  div(class="container")
+    div(id="top" class="row")
+      h1 Información de Zonas
+    div(class="row")
+      div(class="col-8")
+        div(id="map")
+        button(id="read-button" onClick="fs2()")
+      div(class="col-4")
+        div(class="row")
+         p( id="dat1")
+         p( id="dat2")
+        div(class="row") Porcentaje de Ovitrampa positiva 
+
+        div(class="row")
+          div( id="divRojo" class="col-4")
+          div(id="divTexto" class="col-8") Zona entre( 66% - 100% ) 
+        div(class="row")
+          div(id="divAmarillo" class="col-4")
+          div(id="divTexto" class="col-8")  Zona entre ( 33% - 66% )
+        div(class="row")
+          div(id="divVerde" class="col-4")
+          div(id="divTexto" class="col-8")  Zona entre ( 0% - 33% )
+  script(src="/js/main.js")
+        
+
